@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    //favicon
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Jokes</title>
+</head>
+
+<body>
+    <div
+        class="flex justify-center items-center absolute inset-0 h-full w-full bg-zinc-900 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:50px_50px]">
+        <div class="container bg-slate-50 min-h-64 md:w-1/4 mx-5 md:mx-0 rounded-lg shadow-lg shadow-zinc-600 p-5">
+            <div class="flex flex-col justify-center items-center gap-5">
+                <img class="w-16" src="image.png" alt="funny img">
+                <p id="joke" class="text-center text-sm">
+                    
+                    <!-- loader -->
+                     <div id="loader" class="hidden">
+                         <div  class="relative flex w-64 animate-pulse gap-2 p-4">
+                             <div class="flex-1">
+                                 <div class="mb-1 h-5 w-3/5 rounded-lg bg-slate-400 text-lg"></div>
+                                 <div class="h-5 w-[90%] rounded-lg bg-slate-400 text-sm"></div>
+                                </div>
+                                <div class="absolute bottom-5 right-0 h-4 w-4 rounded-full bg-slate-400"></div>
+                            </div>
+                        </div>
+
+
+                </p>
+                <div class="flex gap-10">
+                    <button id="newJokeBtn" onclick="getJoke();" class="bg-blue-500 hover:bg-blue-700 text-white  py-2 px-4 rounded">Genreat new </button>
+                    <!-- <button id="copyBtn" class="bg-blue-500 hover:bg-blue-700 text-white  py-2 px-4 rounded">Copy</button>         -->
+                </div>
+                <!-- <p id="copyStatus" class="text-green-500 mt-2 hidden">Joke copied to clipboard!</p> -->
+                <p id="copyStatus" class="text-zinc-400 mt-2 text-sm">Made With Love By - ADITYA GUPTA || <a href="#">Sourec Code</a></p>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

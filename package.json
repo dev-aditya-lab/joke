@@ -1,0 +1,21 @@
+{
+  "name": "joke",
+  "version": "1.0.0",
+  "description": "a joke website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web" : "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [
+    "jokes",
+    "joke",
+    "Hindi",
+    "Jokes"
+  ],
+  "author": "Aditya Gupta",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  }
+}
